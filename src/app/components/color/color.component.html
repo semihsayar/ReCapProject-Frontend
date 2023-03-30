@@ -1,0 +1,22 @@
+<div
+  class="alert alert-primary"
+  role="alert"
+  style="text-align: center; margin-top: 20px"
+>
+  COLORS
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Renk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let color of colors">
+        <th scope="row">{{color.colorId}}</th>
+        <td>{{color.colorName}}</td>
+      </tr>
+    </tbody>
+  </table>
+

@@ -1,0 +1,29 @@
+<div
+  class="alert alert-primary"
+  role="alert"
+  style="text-align: center; margin-top: 20px"
+>
+  RENTALS
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Marka</th>
+      <th scope="col">Müşteri İsmi</th>
+      <th scope="col">Müşteri Soyismi</th>
+      <th scope="col">Kiralama Tarihi</th>
+      <th scope="col">Dönüş Tarihi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rental of rentals">
+      <th scope="row">{{rental.id}}</th>
+      <td>{{rental.brandName}}</td>
+      <td>{{ rental.firstName }}</td>
+      <td>{{ rental.lastName }}</td>
+      <td>{{ rental.rentDate }}</td>
+      <td>{{rental.returnDate}}</td>
+    </tr>
+  </tbody>
+</table>
